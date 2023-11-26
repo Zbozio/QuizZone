@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll('.quizButton');
 const nextButton=document.getElementById("nextButton");
 let answered=false;
 
-answers=["Klika mnie","Nie"]
+answers=["Klikaj mnie","Paryż","20 wiek"]
 function handleButtonClick(event) {
     if (!answered) {
     const selectedButton=event.target;
@@ -38,7 +38,7 @@ buttons.forEach(button => {
 
 
 nextButton.addEventListener('click',()=>{
-    answered=false
+    answered=false;
 }
 
 );
