@@ -1,13 +1,10 @@
 const buttons = document.querySelectorAll('.quizButton');
 const nextButton=document.getElementById("nextButton");
 let answered=false;
-Answers1=["29%","15%","36%",'41%'];
-Answers2=["","","",""];
-Answers3=["","","",""];
-Answers4=["","","",""];
-Answers5=["","","",""];
-Questions=["Ile procent polaków pali papierosy?"];
 
+const Questions=["Ile procent polaków pali papierosy?"];
+const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["Warszawa","Paryż","Madryt","Berlin"]];
+let j=0;
 
 answers_good=["Klikaj mnie","Paryż","20 wiek","tak"]
 function handleButtonClick(event) {
@@ -49,9 +46,11 @@ nextButton.addEventListener('click',()=>{
     answered=false;
     let i=0;
         buttons.forEach(button => {
-            button.innerText=Answers1[i];
-            i++;
+            button.style.backgroundColor = 'white';
+            button.innerText=AnswersAll[j][i];
+            i++;     
         })
+        j++;
         
     }
     
