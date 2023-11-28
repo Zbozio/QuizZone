@@ -1,12 +1,14 @@
 const buttons = document.querySelectorAll('.quizButton');
 const nextButton=document.getElementById("nextButton");
+const quizQuestion=document.getElementById("quizQuestion");
+
 let answered=false;
 
-const Questions=["Ile procent polaków pali papierosy?"];
-const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["Warszawa","Paryż","Madryt","Berlin"]];
+const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Jak nazywa się dziewczyna Karola?"];
+const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["Basia","Małgosia","Marcelina :3","Ula"]];
 let j=0;
 
-answers_good=["Klikaj mnie","Paryż","20 wiek","tak"]
+answers_good=["2004","29%","Warszawa","Nos","Marcelina :3"]
 function handleButtonClick(event) {
     if (!answered) {
     const selectedButton=event.target;
@@ -50,6 +52,7 @@ nextButton.addEventListener('click',()=>{
             button.innerText=AnswersAll[j][i];
             i++;     
         })
+        quizQuestion.innerText=Questions[j];
         j++;
         
     }
