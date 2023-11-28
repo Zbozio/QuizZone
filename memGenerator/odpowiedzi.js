@@ -7,8 +7,8 @@ let answered=false;
 const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Jak nazywa się dziewczyna Karola?"];
 const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["Basia","Małgosia","Marcelina :3","Ula"]];
 let j=0;
+const answers_good=["2004","29%","Warszawa","Nos","Marcelina :3"]
 
-answers_good=["2004","29%","Warszawa","Nos","Marcelina :3"]
 function handleButtonClick(event) {
     if (!answered) {
     const selectedButton=event.target;
@@ -46,6 +46,7 @@ buttons.forEach(button => {
 
 nextButton.addEventListener('click',()=>{
     answered=false;
+    nextButton.style.display='none'
     let i=0;
         buttons.forEach(button => {
             button.style.backgroundColor = 'white';
@@ -57,7 +58,7 @@ nextButton.addEventListener('click',()=>{
         
     }
     
-
+    
 );
 
 
