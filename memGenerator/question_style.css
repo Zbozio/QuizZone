@@ -116,4 +116,9 @@ body {
     width: 90px;
     height: 40px;
     display: none;
+    cursor: pointer;
+}
+.tytul{
+    color: white;
+    text-decoration: none;
 }
