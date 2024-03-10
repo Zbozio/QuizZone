@@ -1,13 +1,16 @@
 const buttons = document.querySelectorAll('.quizButton');
 const nextButton=document.getElementById("nextButton");
 const quizQuestion=document.getElementById("quizQuestion");
+const counterHandle=document.getElementById("counter");
 
 let answered=false;
+let currentCount=2;
+const totalCount=5;
 
-const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Jak nazywa się dziewczyna Karola?"];
-const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["Basia","Małgosia","Marcelina :3","Ula"]];
+const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Ile polska ma mieszkańców"];
+const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["15 milionów","23 miliony","19 milionów","38 milionów"]];
 let j=0;
-const answers_good=["2004","29%","Warszawa","Nos","Marcelina :3"]
+const answers_good=["2004","29%","Warszawa","Nos","38 milionów"]
 
 function handleButtonClick(event) {
     if (!answered) {
@@ -46,6 +49,7 @@ buttons.forEach(button => {
 
 nextButton.addEventListener('click',()=>{
     answered=false;
+    counterHandle.textContent= currentCount +"/"+ totalCount;
     nextButton.style.display='none'
     let i=0;
         buttons.forEach(button => {
@@ -55,8 +59,9 @@ nextButton.addEventListener('click',()=>{
         })
         quizQuestion.innerText=Questions[j];
         j++;
-        
+        currentCount++;
     }
+     
     
     
 );

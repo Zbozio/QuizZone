@@ -1,0 +1,24 @@
+{
+    "questions": [
+      {
+        "question": "Ile procent Polaków pali papierosy?",
+        "answers": ["29%", "15%", "36%", "41%"],
+        "correct_answer": "29%"
+      },
+      {
+        "question": "Co jest stolicą Polski?",
+        "answers": ["Warszawa", "Paryż", "Madryt", "Berlin"],
+        "correct_answer": "Warszawa"
+      },
+      {
+        "question": "Co służy człowiekowi do oddychania?",
+        "answers": ["Oczy", "Uszy", "Nos", "Palce"],
+        "correct_answer": "Nos"
+      },
+      {
+        "question": "Ile mieszkańców ma Polska?",
+        "answers": ["15 milionów", "23 miliony", "19 milionów", "38 milionów"],
+        "correct_answer": "38 milionów"
+      }
+    ]
+  }
