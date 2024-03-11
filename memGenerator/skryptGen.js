@@ -6,7 +6,7 @@ const links = document.querySelectorAll('.list_option a');
 
 
 const FrontPage=document.getElementById("FrontPage")
-const category = ["quiz_pytania.html", "quiz_pytania.html", "quiz_pytania.html", "quiz_pytania.html", "quiz_pytania.html"];
+const category = ["kategoria1.html", "kategoria2.html", "kategoria3.html", "kategoria4.html", "kategoria5.html"];
 
 
 changeCategoryButton.addEventListener("click", () => {
