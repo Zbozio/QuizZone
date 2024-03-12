@@ -8,7 +8,7 @@ let currentCount=2;
 const totalCount=5;
 
 const Questions=["Kto napisał \"Romeo i Julia\"?","Co jest głównym motywem w powieści \"Zbrodnia i kara\"?","Która powieść z poniższych nie została napisana przez Jane Austen?","Kim jest główny bohater \"Opowieści wigilijnej\" Charlesa Dickensa?"];
-const AnswersAll=[["William Shakespeare","Charles Dickens","Jane Austen",'Fyodor Dostoevsky'],["Miłość","Zemsta"," Sprawiedliwość","Przestępczość i kara"],["Oczy","Uszy","Nos","Palce"],["15 milionów","23 miliony","19 milionów","38 milionów"]];
+const AnswersAll=[["William Shakespeare","Charles Dickens","Jane Austen",'Fyodor Dostoevsky'],["Miłość","Zemsta"," Sprawiedliwość","Przestępczość i kara"],["Duma i uprzedzenie","Wichrowe Wzgórza","Emma","Zmysł i sens"],["Scrooge","Oliver Twist","Mr. Darcy","Dr. Jekyll"]];
 let j=0;
 const answers_good=["William Shakespeare","29%","Warszawa","Nos","38 milionów"]
 
