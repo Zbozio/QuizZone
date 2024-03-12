@@ -7,10 +7,10 @@ let answered=false;
 let currentCount=2;
 const totalCount=5;
 
-const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Ile polska ma mieszkańców"];
-const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["15 milionów","23 miliony","19 milionów","38 milionów"]];
+const Questions=["Które z poniższych miast leży nad rzeką Nile?","Które z poniższych państw nie graniczy z Morzem Śródziemnym?","Jak nazywa się największe jezioro w Afryce?","Gdzie znajduje się najwyższy szczyt Ameryki Północnej?"];
+const AnswersAll=[["Nairobi%","Kair","Lagos",'Johannesburg'],["Włochy","Hiszpania","Grecja","Niemcy"],["Jezioro Bajkał","Jezioro Wiktorii","Jezioro Tanganika","Jezioro Michigan"],[" Kolumbia Brytyjska, Kanada","Alaska, USA","Meksyk","Gwatemala"]];
 let j=0;
-const answers_good=["2004","29%","Warszawa","Nos","38 milionów"]
+const answers_good=["Grenlandia","Kair","Niemcy","Jezioro Wiktorii","Alaska, USA"]
 
 function handleButtonClick(event) {
     if (!answered) {
