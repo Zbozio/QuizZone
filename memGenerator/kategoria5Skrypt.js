@@ -7,10 +7,10 @@ let answered=false;
 let currentCount=2;
 const totalCount=5;
 
-const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Ile polska ma mieszkańców"];
-const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["15 milionów","23 miliony","19 milionów","38 milionów"]];
+const Questions=["Kto zagrał główną rolę w filmie \"Leon zawodowiec\"?","Która z poniższych postaci została zagrana przez Heatha Ledgera w \"Mrocznym Rycerzu\"?","Który film jest adaptacją książki Stephena Kinga o grupie dzieci walczących z istotą zwaną \"To\"?","Który reżyser jest odpowiedzialny za film \"Interstellar\"?"];
+const AnswersAll=[["Bruce Willis","Al Pacino","Jean Reno",'Keanu Reeves'],["Joker","Batman","Harvey Dent","Ra's al Ghul"],["\"Straszny dom\"","\"The Green Mile\"","\"To\"","\"Martwa strefa\""],["15 milionów","23 miliony","19 milionów","38 milionów"]];
 let j=0;
-const answers_good=["2004","29%","Warszawa","Nos","38 milionów"]
+const answers_good=["Forrest Gump","Jean Reno","Joker","\"To\"","Christopher Nolan"]
 
 function handleButtonClick(event) {
     if (!answered) {
