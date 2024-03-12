@@ -7,10 +7,10 @@ let answered=false;
 let currentCount=2;
 const totalCount=5;
 
-const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Ile polska ma mieszkańców"];
-const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["15 milionów","23 miliony","19 milionów","38 milionów"]];
+const Questions=["Który naukowiec znany jest jako \"ojciec genetyki\"?","Który naukowiec odkrył strukturę podwójnej helisy DNA?","Kto opracował teorię ewolucji przez dobór naturalny?","Który naukowiec sformułował słynne równanie E=mc^2?"];
+const AnswersAll=[["Gregor Mendel","Charles Darwin","Louis Pasteur",'Marie Curie'],["James Watson","Francis Crick","Rosalind Franklin","Linus Pauling"],["Gregor Mendel","Charles Darwin","Louis Pasteur","Thomas Edison"],["Isaac Newton","Albert Einstein","Max Planck","Stephen Hawking"]];
 let j=0;
-const answers_good=["2004","29%","Warszawa","Nos","38 milionów"]
+const answers_good=["Albert Einstein","Gregor Mendel","Francis Crick","Charles Darwin","Albert Einstein"]
 
 function handleButtonClick(event) {
     if (!answered) {
