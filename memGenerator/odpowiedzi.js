@@ -3,10 +3,14 @@ const nextButton=document.getElementById("nextButton");
 const quizQuestion=document.getElementById("quizQuestion");
 const counterHandle=document.getElementById("counter");
 const popUp=document.getElementById("popUp");
+const score=document.getElementById("score");
+
 
 let answered=false;
-let currentCount=2;
+let currentCount=1;
 const totalCount=5;
+let goodAnswer=0;
+
 
 const Questions=["Ile procent polaków pali papierosy?","Co jest stolicą Polski?","Co służy człowiekowi do oddychania?","Ile polska ma mieszkańców"];
 const AnswersAll=[["29%","15%","36%",'41%'],["Warszawa","Paryż","Madryt","Berlin"],["Oczy","Uszy","Nos","Palce"],["15 milionów","23 miliony","19 milionów","38 milionów"]];
@@ -28,12 +32,27 @@ function handleButtonClick(event) {
     {
         buttons.forEach(button=>{
             if(answers_good.includes(button.innerText))
-            button.style.backgroundColor = 'green';
+            {
+                button.style.backgroundColor = 'green';
+                goodAnswer++;
+                console.log(goodAnswer);
+            }
+           
+        
             
         })
     }
     answered=true;
-    nextButton.style.display='inline-block';
+    currentCount++;
+    if(currentCount<=5) nextButton.style.display='inline-block';
+    
+    if(currentCount>=6){
+        score.textContent= "Twój wynik to: " +(totalCount-goodAnswer) +"/"+ totalCount;
+        popUp.classList.add("open")
+        nextButton.style.display="hide";
+         
+
+  }
 
 }}
 
@@ -49,6 +68,7 @@ buttons.forEach(button => {
 
 
 nextButton.addEventListener('click',()=>{
+    
     answered=false;
     counterHandle.textContent= currentCount +"/"+ totalCount;
     nextButton.style.display='none'
@@ -59,13 +79,17 @@ nextButton.addEventListener('click',()=>{
             i++;     
         })
         quizQuestion.innerText=Questions[j];
-        currentCount++;
+        
+        
         j++;
         
-        if(currentCount===6){
-            popUp.classList.add("open")
 
-        }
+        
+       
+
+
+       
+
         
     }
      
