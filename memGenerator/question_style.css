@@ -131,3 +131,9 @@ body {
     width: 2%;
     margin: auto;
 }
+.fontType {
+    
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
