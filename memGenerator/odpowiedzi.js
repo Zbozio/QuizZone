@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll('.quizButton');
 const nextButton=document.getElementById("nextButton");
 const quizQuestion=document.getElementById("quizQuestion");
 const counterHandle=document.getElementById("counter");
+const popUp=document.getElementById("popUp");
 
 let answered=false;
 let currentCount=2;
@@ -58,8 +59,14 @@ nextButton.addEventListener('click',()=>{
             i++;     
         })
         quizQuestion.innerText=Questions[j];
-        j++;
         currentCount++;
+        j++;
+        
+        if(currentCount===6){
+            popUp.classList.add("open")
+
+        }
+        
     }
      
     

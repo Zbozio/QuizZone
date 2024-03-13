@@ -137,3 +137,38 @@ body {
     font-weight: 300;
     font-style: normal;
   }
+.innerPop{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 25%;
+    height: 20vh;
+}
+.popUp{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.popUp.open{
+    opacity: 1;
+    z-index: 999;
+}
+.FrontPage{
+    color:#d8d8c3;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    margin:0;
+    margin-top: 6rem;
+    
+}
