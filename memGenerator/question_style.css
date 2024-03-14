@@ -78,7 +78,7 @@ body {
     text-align: left;
 }
 .clickMe:hover {
-    background-color: darkgray; /* Przy najechaniu zmienia się kolor tła */
+    background-color: darkgray; 
   }
 .Front{
     text-align: center;
@@ -156,6 +156,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+    background:rgba(0, 0, 0, 0.7);
 }
 .popUp.open{
     opacity: 1;
@@ -215,3 +216,42 @@ button.nextButtonStyle{
    button.nextButtonStyle:active{
     transform: scale(0.95);
    }
+   
+
+
+
+
+.nextButtonStyle h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p.score {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.modalButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     
+    
+}
+.modalA {
+    text-decoration: none; 
+    color: inherit; 
+}
+button:hover {
+    background-color: #0056b3; 
+}
