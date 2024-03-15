@@ -27,15 +27,15 @@ function handleButtonClick(event) {
         }
     });
 
-    selectedButton.style.backgroundColor = isCorrect ? 'green' : 'red';
-    if (selectedButton.style.backgroundColor==='red')
+    selectedButton.style.backgroundColor = isCorrect ? 'rgb(76, 175, 80)' : 'rgb(229, 57, 53)';
+    if (selectedButton.style.backgroundColor==='rgb(229, 57, 53)')
     {
         buttons.forEach(button=>{
             if(answers_good.includes(button.innerText))
             {
-                button.style.backgroundColor = 'green';
+                button.style.backgroundColor = 'rgb(76, 175, 80)';
                 goodAnswer++;
-                console.log(goodAnswer);
+                
             }
            
         
@@ -82,14 +82,6 @@ nextButton.addEventListener('click',()=>{
         
         
         j++;
-        
-
-        
-       
-
-
-       
-
         
     }
      

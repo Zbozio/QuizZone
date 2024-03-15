@@ -22,12 +22,13 @@ function handleButtonClick(event) {
         }
     });
 
-    selectedButton.style.backgroundColor = isCorrect ? '#4CAF50' : '#E53935';
-    if (selectedButton.style.backgroundColor==='#E53935')
+    selectedButton.style.backgroundColor = isCorrect ? 'rgb(76, 175, 80)' : 'rgb(229, 57, 53)';
+    if (selectedButton.style.backgroundColor==='rgb(229, 57, 53)')
     {
         buttons.forEach(button=>{
             if(answers_good.includes(button.innerText))
-            button.style.backgroundColor = '#4CAF50';
+            button.style.backgroundColor = 'rgb(76, 175, 80)';
+            goodAnswer++;
             
         })
     }
