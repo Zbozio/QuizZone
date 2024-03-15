@@ -76,6 +76,9 @@ body {
     border-radius: 10px;
     cursor: pointer;
     text-align: left;
+    border-style: solid;
+    border-color: black; 
+    border-width: 1px;
 }
 .clickMe:hover {
     background-color: darkgray; 
