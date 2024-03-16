@@ -37,9 +37,6 @@ function handleButtonClick(event) {
                 goodAnswer++;
                 
             }
-           
-        
-            
         })
     }
     answered=true;
