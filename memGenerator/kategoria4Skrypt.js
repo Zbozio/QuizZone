@@ -10,10 +10,10 @@ let currentCount=1;
 const totalCount=5;
 let goodAnswer=0;
 
-const Questions=["Który naukowiec znany jest jako \"ojciec genetyki\"?","Który naukowiec odkrył strukturę podwójnej helisy DNA?","Kto opracował teorię ewolucji przez dobór naturalny?","Który naukowiec sformułował słynne równanie E=mc^2?"];
-  const AnswersAll=[["Gregor Mendel","Charles Darwin","Louis Pasteur",'Marie Curie'],["James Watson","Francis Crick","Rosalind Franklin","Linus Pauling"],["Gregor Mendel","Charles Darwin","Louis Pasteur","Thomas Edison"],["Isaac Newton","Albert Einstein","Max Planck","Stephen Hawking"]];
-  let j=0;
-  const answers_good=["Albert Einstein","Gregor Mendel","Francis Crick","Charles Darwin","Albert Einstein"]
+const Questions=["Który naukowiec znany jest jako \"ojciec genetyki\"?","Który naukowiec odkrył strukturę podwójnej helisy DNA?","Który naukowiec był pierwszym człowiekiem, który obserwował księżyc przez teleskop?","Kto zaproponował model atomu, w którym elektrony krążą wokół jądra atomowego?"];
+const AnswersAll=[["Gregor Mendel","Charles Darwin","Louis Pasteur",'Marie Curie'],["James Watson","Francis Crick","Rosalind Franklin","Linus Pauling"],["Stephen Hawking","Galileusz","Louis Pasteur","Thomas Edison"],["Isaac Newton","Niels Bohr","Max Planck","Stephen Hawking"]];
+let j=0;
+const answers_good=["Albert Einstein","Gregor Mendel","Francis Crick","Galileusz","Niels Bohr"]
 
 function handleButtonClick(event) {
     if (!answered) {
