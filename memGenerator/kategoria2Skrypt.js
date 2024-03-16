@@ -13,7 +13,7 @@ let goodAnswer=0;
 const Questions=["Kto napisał \"Romeo i Julia\"?","Co jest głównym motywem w powieści \"Zbrodnia i kara\"?","Która powieść z poniższych nie została napisana przez Jane Austen?","Kim jest główny bohater \"Opowieści wigilijnej\" Charlesa Dickensa?"];
 const AnswersAll=[["William Shakespeare","Charles Dickens","Jane Austen",'Fyodor Dostoevsky'],["Miłość","Zemsta"," Sprawiedliwość","Przestępczość i kara"],["Duma i uprzedzenie","Wichrowe Wzgórza","Emma","Zmysł i sens"],["Scrooge","Oliver Twist","Mr. Darcy","Dr. Jekyll"]];
 let j=0;
-const answers_good=["Zbrodnia i kara","William Shakespeare","Przestępczość i kara","Wichrowe Wzgórza"," Scrooge"]
+const answers_good=["Zbrodnia i kara","William Shakespeare","Przestępczość i kara","Wichrowe Wzgórza","Scrooge"]
 
 function handleButtonClick(event) {
     if (!answered) {
