@@ -41,6 +41,7 @@ function handleButtonClick(event) {
     }
     answered=true;
     currentCount++;
+
     if(currentCount<=5) nextButton.style.display='inline-block';
     
     if(currentCount>=6){
@@ -76,8 +77,6 @@ nextButton.addEventListener('click',()=>{
             i++;     
         })
         quizQuestion.innerText=Questions[j];
-        
-        
         j++;
         
     }

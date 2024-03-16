@@ -38,6 +38,7 @@ function handleButtonClick(event) {
     }
     answered=true;
     currentCount++;
+    console.log(currentCount);
     if(currentCount<=5) nextButton.style.display='inline-block';
 
     if(currentCount>=6){
