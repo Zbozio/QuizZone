@@ -35,6 +35,7 @@ function handleButtonClick(event) {
             {
                 button.style.backgroundColor = 'rgb(76, 175, 80)';
                 goodAnswer++;
+                console.log("Hello, " + person + "!");
                 
             }
         })
