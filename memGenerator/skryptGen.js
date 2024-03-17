@@ -26,4 +26,3 @@ changeTextButton.addEventListener("click", () => {
     const randomIndex = Math.floor(Math.random() * headlines.length);
     h1Element.textContent = headlines[randomIndex];
 });
- 

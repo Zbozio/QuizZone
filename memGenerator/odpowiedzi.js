@@ -4,6 +4,9 @@ const quizQuestion=document.getElementById("quizQuestion");
 const counterHandle=document.getElementById("counter");
 const popUp=document.getElementById("popUp");
 const score=document.getElementById("score");
+let urlParams = new URLSearchParams(window.location.search);
+let personValue = urlParams.get('personValue');
+console.log(personValue);
 
 
 let answered=false;
@@ -35,7 +38,8 @@ function handleButtonClick(event) {
             {
                 button.style.backgroundColor = 'rgb(76, 175, 80)';
                 goodAnswer++;
-                console.log("Hello, " + person + "!");
+                
+                
                 
             }
         })
@@ -46,7 +50,7 @@ function handleButtonClick(event) {
     if(currentCount<=5) nextButton.style.display='inline-block';
     
     if(currentCount>=6){
-        score.textContent= "Twój wynik to: " +(totalCount-goodAnswer) +"/"+ totalCount;
+        score.innerHTML = "Brawo " + person +"!"+ "<br>Twój wynik to: " + (totalCount - goodAnswer) + "/" + totalCount;
         popUp.classList.add("open")
         nextButton.style.display="hide";
          
@@ -85,5 +89,5 @@ nextButton.addEventListener('click',()=>{
     
     
 );
-
+let person = prompt("Please enter your name:")
 
