@@ -89,5 +89,14 @@ nextButton.addEventListener('click',()=>{
     
     
 );
-let person = prompt("Please enter your name:")
+
+function requiredFunction() {
+    var answer = prompt('Reason for deletion?');
+    if (answer == "") {
+      requiredFunction();
+    }
+    return answer;
+  }
+let person = requiredFunction() ;
+
 
