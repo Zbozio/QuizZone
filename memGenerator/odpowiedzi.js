@@ -52,17 +52,6 @@ function handleButtonClick(event) {
         score.innerHTML = "Brawo " + person +"!"+ "<br>Twój wynik to: " + (totalCount - goodAnswer) + "/" + totalCount;
         popUp.classList.add("open")
         nextButton.style.display="hide";
-       
-        const userData = {
-            name: "Jan Kowalski",
-            score: 20
-        };
-        
-        // Konwersja danych na JSON
-        const jsonData = JSON.stringify(userData);
-        
-        // Zapis danych do localStorage
-        localStorage.setItem('userData', jsonData);
 
   }
 
@@ -100,7 +89,7 @@ nextButton.addEventListener('click',()=>{
 );
 
 function requiredFunction() {
-    var answer = prompt('Reason for deletion?');
+    var answer = prompt('Podaj swoje imie?');
     if (answer == "") {
       requiredFunction();
     }
