@@ -42,7 +42,7 @@ function handleButtonClick(event) {
     if(currentCount<=5) nextButton.style.display='inline-block';
 
     if(currentCount>=6){
-        score.textContent= "Twój wynik to: " +(totalCount-goodAnswer) +"/"+ totalCount;
+        score.innerHTML = "Brawo " + person +"!"+ "<br>Twój wynik to: " + (totalCount - goodAnswer) + "/" + totalCount;
         popUp.classList.add("open")
         nextButton.style.display="hide";
          
@@ -82,3 +82,14 @@ nextButton.addEventListener('click',()=>{
 );
 
 
+function requiredFunction() {
+    var answer = prompt('Podaj swoje imie?');
+    if (answer == "") {
+      requiredFunction();
+    }
+    return answer;
+  }
+  let person;
+  document.addEventListener('DOMContentLoaded', function () {
+      person = requiredFunction();
+  });
