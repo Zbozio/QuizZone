@@ -4,9 +4,8 @@ const quizQuestion=document.getElementById("quizQuestion");
 const counterHandle=document.getElementById("counter");
 const popUp=document.getElementById("popUp");
 const score=document.getElementById("score");
-let urlParams = new URLSearchParams(window.location.search);
-let personValue = urlParams.get('personValue');
-console.log(personValue);
+
+
 
 
 let answered=false;
@@ -53,7 +52,17 @@ function handleButtonClick(event) {
         score.innerHTML = "Brawo " + person +"!"+ "<br>Twój wynik to: " + (totalCount - goodAnswer) + "/" + totalCount;
         popUp.classList.add("open")
         nextButton.style.display="hide";
-         
+       
+        const userData = {
+            name: "Jan Kowalski",
+            score: 20
+        };
+        
+        // Konwersja danych na JSON
+        const jsonData = JSON.stringify(userData);
+        
+        // Zapis danych do localStorage
+        localStorage.setItem('userData', jsonData);
 
   }
 
@@ -97,6 +106,9 @@ function requiredFunction() {
     }
     return answer;
   }
-let person = requiredFunction() ;
+  let person;
+  document.addEventListener('DOMContentLoaded', function () {
+      person = requiredFunction();
+  });
 
 
